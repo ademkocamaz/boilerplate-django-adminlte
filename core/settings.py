@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'home',
     'pages',
     'pages.layout',
+    'pages.charts',
+    
 ]
 
 MIDDLEWARE = [

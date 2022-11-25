@@ -28,7 +28,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
-            <li class="nav-item">
+            <li class="nav-item"><!-- Dashboard -->
                 <a href="#" {% if 'index' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
@@ -57,7 +57,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item"><!-- Widgets -->
                 <a href="{% url 'widgets' %}" {% if 'widgets' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-th"></i>
                     <p>
@@ -66,7 +66,7 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item"><!-- Layout Options -->
                 <a href="#" {% if 'layout' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-copy"></i>
                     <p>
@@ -126,8 +126,8 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
+            <li class="nav-item"><!-- Charts -->
+                <a href="#" {% if 'charts' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-chart-pie"></i>
                     <p>
                         Charts
@@ -136,32 +136,32 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="pages/charts/chartjs.html" class="nav-link">
+                        <a href="{% url 'chartjs' %}" {% if 'chartjs' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>ChartJS</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/charts/flot.html" class="nav-link">
+                        <a href="{% url 'flot' %}" {% if 'flot' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Flot</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/charts/inline.html" class="nav-link">
+                        <a href="{% url 'inline' %}" {% if 'inline' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Inline</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/charts/uplot.html" class="nav-link">
+                        <a href="{% url 'uplot' %}" {% if 'uplot' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>uPlot</p>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item"><!-- UI Elements -->
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-tree"></i>
                     <p>
