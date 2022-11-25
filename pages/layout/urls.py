@@ -9,7 +9,7 @@ urlpatterns = [
     path('fixed-sidebar-custom/', views.fixed_sidebar_custom, name='fixed-sidebar-custom'),
     path('fixed-topnav/', views.fixed_topnav, name='fixed-topnav'),
     path('fixed-footer/', views.fixed_footer, name='fixed-footer'),
-    path('collapsed-sidebar', views.collapsed_sidebar, name='collapsed-sidebar'),
+    path('collapsed-sidebar/', views.collapsed_sidebar, name='collapsed-sidebar'),
     
 
 
