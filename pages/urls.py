@@ -7,5 +7,7 @@ urlpatterns = [
     path('charts/', include('pages.charts.urls')),
     path('ui/', include('pages.ui.urls')),
     path('forms/', include('pages.forms.urls')),
+    path('tables/', include('pages.tables.urls')),
+    path('calendar/', views.calendar, name='calendar'),
 
 ]

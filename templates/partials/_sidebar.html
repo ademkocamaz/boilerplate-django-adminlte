@@ -255,7 +255,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li {% if 'tables' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Tables -->
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-table"></i>
                     <p>
@@ -265,19 +265,19 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="pages/tables/simple.html" class="nav-link">
+                        <a href="{% url 'tables_simple' %}" {% if 'tables/simple' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Simple Tables</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/tables/data.html" class="nav-link">
+                        <a href="{% url 'tables_data' %}" {% if 'tables/data' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>DataTables</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/tables/jsgrid.html" class="nav-link">
+                        <a href="{% url 'tables_jsgrid' %}" {% if 'tables/jsgrid' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>jsGrid</p>
                         </a>
@@ -286,7 +286,7 @@
             </li>
             <li class="nav-header">EXAMPLES</li>
             <li class="nav-item">
-                <a href="pages/calendar.html" class="nav-link">
+                <a href="{% url 'calendar' %}" {% if 'calendar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon far fa-calendar-alt"></i>
                     <p>
                         Calendar

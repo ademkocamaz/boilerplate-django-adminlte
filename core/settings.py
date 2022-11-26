@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'pages.charts',
     'pages.ui',
     'pages.forms',
+    'pages.tables',
     
     
 ]

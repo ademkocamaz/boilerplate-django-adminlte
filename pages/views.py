@@ -5,3 +5,6 @@ from django.shortcuts import render
 
 def widgets(request):
     return render(request, 'pages/widgets.html')
+
+def calendar(request):
+    return render(request, 'pages/calendar.html')
