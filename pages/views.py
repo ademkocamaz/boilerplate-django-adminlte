@@ -11,3 +11,6 @@ def calendar(request):
 
 def gallery(request):
     return render(request, 'pages/gallery.html')
+
+def kanban(request):
+    return render(request, 'pages/kanban.html')

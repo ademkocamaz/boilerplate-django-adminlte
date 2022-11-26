@@ -10,5 +10,6 @@ urlpatterns = [
     path('tables/', include('pages.tables.urls')),
     path('calendar/', views.calendar, name='calendar'),
     path('gallery/', views.gallery, name='gallery'),
+    path('kanban/', views.kanban, name='kanban'),
 
 ]
