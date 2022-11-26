@@ -8,5 +8,7 @@ urlpatterns = [
     path('sliders/', views.sliders, name='sliders'),
     path('modals/', views.modals, name='modals'),
     path('navbar/', views.navbar, name='navbar'),
+    path('timeline/', views.timeline, name='timeline'),
+    path('ribbons/', views.ribbons, name='ribbons'),
 
 ]

@@ -20,3 +20,9 @@ def modals(request):
 
 def navbar(request):
     return render(request, 'pages/ui/navbar.html')
+
+def timeline(request):
+    return render(request, 'pages/ui/timeline.html')
+
+def ribbons(request):
+    return render(request, 'pages/ui/ribbons.html')

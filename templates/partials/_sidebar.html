@@ -28,7 +28,7 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
             <!-- Add icons to the links using the .nav-icon class
            with font-awesome or any other icon font library -->
-            <li class="nav-item"><!-- Dashboard -->
+            <li {% if 'index' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Dashboard -->
                 <a href="#" {% if 'index' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-tachometer-alt"></i>
                     <p>
@@ -66,7 +66,7 @@
                     </p>
                 </a>
             </li>
-            <li class="nav-item"><!-- Layout Options -->
+            <li {% if 'layout' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Layout Options -->
                 <a href="#" {% if 'layout' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-copy"></i>
                     <p>
@@ -126,7 +126,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item"><!-- Charts -->
+            <li {% if 'charts' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Charts -->
                 <a href="#" {% if 'charts' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-chart-pie"></i>
                     <p>
@@ -161,7 +161,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item"><!-- UI Elements -->
+            <li {% if 'ui' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- UI Elements -->
                 <a href="#" {% if 'ui' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-tree"></i>
                     <p>
@@ -207,20 +207,20 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/UI/timeline.html" class="nav-link">
+                        <a href="{% url 'timeline' %}" {% if 'timeline' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Timeline</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/UI/ribbons.html" class="nav-link">
+                        <a href="{% url 'ribbons' %}" {% if 'ribbons' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Ribbons</p>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
+            <li class="nav-item"><!-- Forms -->
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-edit"></i>
                     <p>
