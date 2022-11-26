@@ -220,8 +220,8 @@
                     </li>
                 </ul>
             </li>
-            <li class="nav-item"><!-- Forms -->
-                <a href="#" class="nav-link">
+            <li {% if 'forms' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Forms -->
+                <a href="#" {% if 'forms' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-edit"></i>
                     <p>
                         Forms
