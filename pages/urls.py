@@ -6,5 +6,6 @@ urlpatterns = [
     path('layout/', include('pages.layout.urls')),
     path('charts/', include('pages.charts.urls')),
     path('ui/', include('pages.ui.urls')),
+    path('forms/', include('pages.forms.urls')),
 
 ]

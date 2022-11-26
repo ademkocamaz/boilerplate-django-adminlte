@@ -77,49 +77,49 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{% url 'top-nav' %}" class="nav-link">
+                        <a href="{% url 'layout_top-nav' %}" {% if 'layout/top-nav/' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Top Navigation</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'top-nav-sidebar' %}" {% if 'top-nav-sidebar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'layout_top-nav-sidebar' %}" {% if 'layout/top-nav-sidebar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Top Navigation + Sidebar</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'boxed' %}" {% if 'boxed' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'layout_boxed' %}" {% if 'layout/boxed' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Boxed</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'fixed-sidebar' %}" {% if 'fixed-sidebar/' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'layout_fixed-sidebar' %}" {% if 'layout/fixed-sidebar/' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Fixed Sidebar</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'fixed-sidebar-custom' %}" {% if 'fixed-sidebar-custom' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'layout_fixed-sidebar-custom' %}" {% if 'layout/fixed-sidebar-custom' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Fixed Sidebar <small>+ Custom Area</small></p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'fixed-topnav' %}" {% if 'fixed-topnav' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'layout_fixed-topnav' %}" {% if 'layout/fixed-topnav' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Fixed Navbar</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'fixed-footer' %}" {% if 'fixed-footer' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'layout_fixed-footer' %}" {% if 'layout/fixed-footer' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Fixed Footer</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'collapsed-sidebar' %}" {% if 'collapsed-sidebar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'layout_collapsed-sidebar' %}" {% if 'layout/collapsed-sidebar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Collapsed Sidebar</p>
                         </a>
@@ -136,25 +136,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{% url 'chartjs' %}" {% if 'chartjs' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'charts_chartjs' %}" {% if 'charts/chartjs' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>ChartJS</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'flot' %}" {% if 'flot' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'charts_flot' %}" {% if 'charts/flot' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Flot</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'inline' %}" {% if 'inline' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'charts_inline' %}" {% if 'charts/inline' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Inline</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'uplot' %}" {% if 'uplot' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'charts_uplot' %}" {% if 'charts/uplot' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>uPlot</p>
                         </a>
@@ -171,49 +171,49 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{% url 'general' %}" {% if 'ui/general' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_general' %}" {% if 'ui/general' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>General</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'icons' %}" {% if 'icons' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_icons' %}" {% if 'ui/icons' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Icons</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'buttons' %}" {% if 'buttons' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_buttons' %}" {% if 'ui/buttons' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Buttons</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'sliders' %}" {% if 'sliders' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_sliders' %}" {% if 'ui/sliders' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Sliders</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'modals' %}" {% if 'modals' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_modals' %}" {% if 'ui/modals' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Modals & Alerts</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'navbar' %}" {% if 'navbar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_navbar' %}" {% if 'ui/navbar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Navbar & Tabs</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'timeline' %}" {% if 'timeline' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_timeline' %}" {% if 'ui/timeline' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Timeline</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'ribbons' %}" {% if 'ribbons' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'ui_ribbons' %}" {% if 'ui/ribbons' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Ribbons</p>
                         </a>
@@ -230,25 +230,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="pages/forms/general.html" class="nav-link">
+                        <a href="{% url 'forms_general' %}" {% if 'forms/general' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>General Elements</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/forms/advanced.html" class="nav-link">
+                        <a href="{% url 'forms_advanced' %}" {% if 'forms/advanced' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Advanced Elements</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/forms/editors.html" class="nav-link">
+                        <a href="{% url 'form_editors' %}" {% if 'forms/editors' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Editors</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/forms/validation.html" class="nav-link">
+                        <a href="{% url 'forms_validation' %}" {% if 'forms/validation' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Validation</p>
                         </a>
