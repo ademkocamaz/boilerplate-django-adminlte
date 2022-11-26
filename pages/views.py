@@ -8,3 +8,6 @@ def widgets(request):
 
 def calendar(request):
     return render(request, 'pages/calendar.html')
+
+def gallery(request):
+    return render(request, 'pages/gallery.html')

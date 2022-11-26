@@ -9,5 +9,6 @@ urlpatterns = [
     path('forms/', include('pages.forms.urls')),
     path('tables/', include('pages.tables.urls')),
     path('calendar/', views.calendar, name='calendar'),
+    path('gallery/', views.gallery, name='gallery'),
 
 ]

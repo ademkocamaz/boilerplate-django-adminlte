@@ -285,7 +285,7 @@
                 </ul>
             </li>
             <li class="nav-header">EXAMPLES</li>
-            <li class="nav-item">
+            <li class="nav-item"><!-- Calendar -->
                 <a href="{% url 'calendar' %}" {% if 'calendar' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon far fa-calendar-alt"></i>
                     <p>
@@ -295,7 +295,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="pages/gallery.html" class="nav-link">
+                <a href="{% url 'gallery' %}" {% if 'gallery' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon far fa-image"></i>
                     <p>
                         Gallery
