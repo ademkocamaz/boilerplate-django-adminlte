@@ -339,8 +339,8 @@
                     </li>
                 </ul>
             </li>
-            <li {% if 'examples' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Pages -->
-                <a href="#" {% if 'examples' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+            <li {% if 'examples/pages' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Pages -->
+                <a href="#" {% if 'examples/pages' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-book"></i>
                     <p>
                         Pages
@@ -349,78 +349,78 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{% url 'examples_invoice' %}" {% if 'examples/invoice' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_invoice' %}" {% if 'examples/pages/invoice' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Invoice</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_profile' %}" {% if 'examples/profile' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_profile' %}" {% if 'examples/pages/profile' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Profile</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_e-commerce' %}" {% if 'examples/e-commerce' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_e-commerce' %}" {% if 'examples/pages/e-commerce' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>E-commerce</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_projects' %}" {% if 'examples/projects' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_projects' %}" {% if 'examples/pages/projects' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Projects</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_project-add' %}" {% if 'examples/project-add' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_project-add' %}" {% if 'examples/pages/project-add' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Project Add</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_project-edit' %}" {% if 'examples/project-edit' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_project-edit' %}" {% if 'examples/pages/project-edit' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Project Edit</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_project-detail' %}" {% if 'examples/project-detail' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_project-detail' %}" {% if 'examples/pages/project-detail' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Project Detail</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_contacts' %}" {% if 'examples/contacts' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_contacts' %}" {% if 'examples/pages/contacts' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Contacts</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_faq' %}" {% if 'examples/faq' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_faq' %}" {% if 'examples/pages/faq' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>FAQ</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{% url 'examples_contact-us' %}" {% if 'examples/contact-us' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                        <a href="{% url 'examples_contact-us' %}" {% if 'examples/pages/contact-us' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Contact us</p>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
+            <li {% if 'examples/extras' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Extras -->
+                <a href="#" {% if 'examples/extras' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon far fa-plus-square"></i>
                     <p>
                         Extras
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
-                <ul class="nav nav-treeview">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
+                <ul class="nav nav-treeview"><!-- Login & Register v1 -->
+                    <li {% if 'extras/login-register-v1' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}>
+                        <a href="#" {% if 'extras/login-register-v1' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>
                                 Login & Register v1
@@ -429,33 +429,33 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="pages/examples/login.html" class="nav-link">
+                                <a href="{% url 'examples_login' %}" {% if 'extras/login-register-v1/login' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Login v1</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/examples/register.html" class="nav-link">
+                                <a href="{% url 'examples_register' %}" {% if 'extras/login-register-v1/register' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Register v1</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/examples/forgot-password.html" class="nav-link">
+                                <a href="{% url 'examples_forgot-password' %}" {% if 'extras/login-register-v1/forgot-password' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Forgot Password v1</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/examples/recover-password.html" class="nav-link">
+                                <a href="{% url 'examples_recover-password' %}" {% if 'extras/login-register-v1/recover-password' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Recover Password v1</p>
                                 </a>
                             </li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">
+                    <li {% if 'extras/login-register-v2' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}>
+                        <a href="#" {% if 'extras/login-register-v2' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>
                                 Login & Register v2
@@ -464,25 +464,25 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a href="pages/examples/login-v2.html" class="nav-link">
+                                <a href="{% url 'examples_login-v2' %}" {% if 'extras/login-register-v2/login-v2' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Login v2</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/examples/register-v2.html" class="nav-link">
+                                <a href="{% url 'examples_register-v2' %}" {% if 'extras/login-register-v2/register-v2' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Register v2</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/examples/forgot-password-v2.html" class="nav-link">
+                                <a href="{% url 'examples_forgot-password-v2' %}" {% if 'extras/login-register-v2/forgot-password-v2' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Forgot Password v2</p>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="pages/examples/recover-password-v2.html" class="nav-link">
+                                <a href="{% url 'examples_recover-password-v2' %}" {% if 'extras/login-register-v2/recover-password-v2' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>Recover Password v2</p>
                                 </a>
@@ -490,13 +490,13 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/examples/lockscreen.html" class="nav-link">
+                        <a href="{% url 'examples_lockscreen' %}" {% if 'extras/lockscreen' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Lockscreen</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/examples/legacy-user-menu.html" class="nav-link">
+                        <a href="{% url 'examples_legacy-user-menu' %}" {% if 'extras/legacy-user-menu' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Legacy User Menu</p>
                         </a>

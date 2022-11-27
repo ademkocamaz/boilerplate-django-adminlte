@@ -34,3 +34,33 @@ def faq(request):
 
 def contact_us(request):
     return render(request, 'pages/examples/contact-us.html')
+
+def login(request):
+    return render(request, 'pages/examples/login.html')
+
+def register(request):
+    return render(request, 'pages/examples/register.html')
+
+def forgot_password(request):
+    return render(request, 'pages/examples/forgot-password.html')
+
+def recover_password(request):
+    return render(request, 'pages/examples/recover-password.html')
+
+def login_v2(request):
+    return render(request, 'pages/examples/login-v2.html')
+
+def register_v2(request):
+    return render(request, 'pages/examples/register-v2.html')
+
+def forgot_password_v2(request):
+    return render(request, 'pages/examples/forgot-password-v2.html')
+
+def recover_password_v2(request):
+    return render(request, 'pages/examples/recover-password-v2.html')
+
+def lockscreen(request):
+    return render(request, 'pages/examples/lockscreen.html')
+
+def legacy_user_menu(request):
+    return render(request, 'pages/examples/legacy-user-menu.html')
