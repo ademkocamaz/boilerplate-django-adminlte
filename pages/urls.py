@@ -11,5 +11,7 @@ urlpatterns = [
     path('calendar/', views.calendar, name='calendar'),
     path('gallery/', views.gallery, name='gallery'),
     path('kanban/', views.kanban, name='kanban'),
+    path('mailbox/', include('pages.mlbox.urls')),
+    path('examples/', include('pages.examples.urls')),
 
 ]

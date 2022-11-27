@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'pages.ui',
     'pages.forms',
     'pages.tables',
+    'pages.mlbox',
+    'pages.examples',
     
     
 ]
