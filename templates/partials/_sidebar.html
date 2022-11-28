@@ -564,10 +564,17 @@
             </li>
             <li class="nav-header">MISCELLANEOUS</li>
             <li class="nav-item">
+                {% if 'index2' in request.path %}
+                <a href="{% url 'iframe-dark' %}" {% if 'iframe-dark' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
+                    <i class="nav-icon fas fa-ellipsis-h"></i>
+                    <p>Tabbed IFrame Plugin</p>
+                </a>
+                {% else %}
                 <a href="{% url 'iframe' %}" {% if 'iframe' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-ellipsis-h"></i>
                     <p>Tabbed IFrame Plugin</p>
                 </a>
+                {% endif %}
             </li>
             <li class="nav-item">
                 <a href="https://adminlte.io/docs/3.2/" class="nav-link">
