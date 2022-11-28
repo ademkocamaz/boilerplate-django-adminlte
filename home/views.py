@@ -15,3 +15,6 @@ def index3(request):
 
 def iframe(request):
     return render(request, 'home/iframe.html')
+
+def iframe_dark(request):
+    return render(request, 'home/iframe-dark.html')
