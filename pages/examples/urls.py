@@ -26,5 +26,11 @@ urlpatterns = [
 
     path('extras/lockscreen/', views.lockscreen, name='examples_lockscreen'),
     path('extras/legacy-user-menu/', views.legacy_user_menu, name='examples_legacy-user-menu'),
+    path('extras/language-menu/', views.language_menu, name='examples_language-menu'),
+    path('extras/404/', views.examples_404, name='examples_404'),
+    path('extras/500/', views.examples_500, name='examples_500'),
+    path('extras/pace/', views.pace, name='examples_pace'),
+    path('extras/blank/', views.blank, name='examples_blank'),
+    path('extras/starter/', views.starter, name='examples_starter'),
 
 ]

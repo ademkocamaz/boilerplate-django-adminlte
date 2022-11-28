@@ -64,3 +64,21 @@ def lockscreen(request):
 
 def legacy_user_menu(request):
     return render(request, 'pages/examples/legacy-user-menu.html')
+
+def language_menu(request):
+    return render(request, 'pages/examples/language-menu.html')
+
+def examples_404(request):
+    return render(request, 'pages/examples/404.html')
+
+def examples_500(request):
+    return render(request, 'pages/examples/500.html')
+
+def pace(request):
+    return render(request, 'pages/examples/pace.html')
+
+def blank(request):
+    return render(request, 'pages/examples/blank.html')
+
+def starter(request):
+    return render(request, 'home/starter.html')

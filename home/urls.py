@@ -3,7 +3,8 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('starter/', views.starter, name='starter'),
     path('index2/', views.index2, name='index2'),
     path('index3/', views.index3, name='index3'),
+    path('iframe/', views.iframe, name='iframe'),
+
 ]

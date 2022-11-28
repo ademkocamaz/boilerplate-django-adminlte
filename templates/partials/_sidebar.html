@@ -418,7 +418,7 @@
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
-                <ul class="nav nav-treeview"><!-- Login & Register v1 -->
+                <ul class="nav nav-treeview"><!-- Login & Register v1 & v2 -->
                     <li {% if 'extras/login-register-v1' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}>
                         <a href="#" {% if 'extras/login-register-v1' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
@@ -502,45 +502,45 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/examples/language-menu.html" class="nav-link">
+                        <a href="{% url 'examples_language-menu' %}" {% if 'extras/language-menu' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Language Menu</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/examples/404.html" class="nav-link">
+                        <a href="{% url 'examples_404' %}" {% if 'extras/404' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Error 404</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/examples/500.html" class="nav-link">
+                        <a href="{% url 'examples_500' %}" {% if 'extras/500' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Error 500</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/examples/pace.html" class="nav-link">
+                        <a href="{% url 'examples_pace' %}" {% if 'extras/pace' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Pace</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/examples/blank.html" class="nav-link">
+                        <a href="{% url 'examples_blank' %}" {% if 'extras/blank' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Blank Page</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="starter.html" class="nav-link">
+                        <a href="{% url 'examples_starter' %}" {% if 'extras/starter' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Starter Page</p>
                         </a>
                     </li>
                 </ul>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">
+            <li {% if 'search' in request.path %} class="nav-item menu-open" {% else %} class="nav-item" {% endif %}><!-- Search -->
+                <a href="#" {% if 'search' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-search"></i>
                     <p>
                         Search
@@ -549,13 +549,13 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="pages/search/simple.html" class="nav-link">
+                        <a href="{% url 'search_simple' %}" {% if 'search/simple' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Simple Search</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="pages/search/enhanced.html" class="nav-link">
+                        <a href="{% url 'search_enhanced' %}" {% if 'search/enhanced' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                             <i class="far fa-circle nav-icon"></i>
                             <p>Enhanced</p>
                         </a>
@@ -564,13 +564,13 @@
             </li>
             <li class="nav-header">MISCELLANEOUS</li>
             <li class="nav-item">
-                <a href="iframe.html" class="nav-link">
+                <a href="{% url 'iframe' %}" {% if 'iframe' in request.path %} class="nav-link active" {% else %} class="nav-link" {% endif %}>
                     <i class="nav-icon fas fa-ellipsis-h"></i>
                     <p>Tabbed IFrame Plugin</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="https://adminlte.io/docs/3.1/" class="nav-link">
+                <a href="https://adminlte.io/docs/3.2/" class="nav-link">
                     <i class="nav-icon fas fa-file"></i>
                     <p>Documentation</p>
                 </a>

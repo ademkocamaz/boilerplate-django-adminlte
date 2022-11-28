@@ -13,5 +13,6 @@ urlpatterns = [
     path('kanban/', views.kanban, name='kanban'),
     path('mailbox/', include('pages.mlbox.urls')),
     path('examples/', include('pages.examples.urls')),
+    path('search/', include('pages.search.urls')),
 
 ]

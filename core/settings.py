@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'pages.tables',
     'pages.mlbox',
     'pages.examples',
+    'pages.search',
     
     
 ]
